@@ -1,8 +1,11 @@
-package entity;
+package com.hayblog.domain.entity;
 
 import java.util.Date;
+
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import kotlin.Suppress;
+//import kotlin.Suppress;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,8 +22,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuppressWarnings("serial")
+@TableName("hayblogarticle")
 public class Article {
-
+    @TableId
     private Long id;
     //标题
     private String title;

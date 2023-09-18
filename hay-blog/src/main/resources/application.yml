@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/hayblog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-    username: root
-    password: @Wh060030
+    username: wh
+    password: "060030"
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
